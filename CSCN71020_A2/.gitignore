@@ -1,0 +1,16 @@
+NU nano 9.2                                 .gitignore                                 Modified
+*.pdb
+*.ilk
+*.idb
+*.tlog
+*.lastbuildstate
+*.log
+
+# Visual Studio user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docsta
+
+
+
