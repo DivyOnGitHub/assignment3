@@ -1,47 +1,26 @@
+#include "functions.h"
 
-#include <stdio.h>
-#include <stdbool.h>
-
-// function to read an integer input by displaying a message
-int getIntInput(char message[]) {
-	int input;
-		printf("\n%s\n", message);
-		 scanf_s("%i", &input);
-		return input;
+int getPerimeter(int length, int width) {
+	return 2 * (length + width);
 }
-// read length if between 0 and 100 otherwise set it to -1
+
+int getArea(int length, int width) {
+	return length * width;
+}
+
 int setLength(int input) {
-	if (input >= 0 && input < 100)
-	{
-		int length = input;
-		return length;
-	}
-	
-	return(1);
-		
-	
-}
-// read width if between 0 and 100 otherwise set it to -1
-int setWidth(int input) {
-	if (input > 0 && input <= 100) 
-	{
-		int width = input;
-		return width;
+	if (input >= 1 && input <= 99) {
+		return input;
 	}
 	return 1;
-	
 }
-// calculate permiter
-int getPerimeter(int length, int width) {
-	int perimeter = length + length + width;
-	return perimeter;
+
+int setWidth(int input) {
+	if (input >= 1 && input <= 99) {
+		return input;
+	}
+	return 1;
 }
-// calculate area
-int getArea(int length, int width) {
-	int area = length * width;
-	return area;
-}
-// printing menu and options
 
 void printWelcomeMenu() {
 	printf(" **********************\n");
